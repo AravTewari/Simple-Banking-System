@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SimpleBankSystemTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-26T18:40:20" hostname="CARBONX1" time="6.885">
+  <properties/>
+  <testcase name="start" classname="SimpleBankSystemTest" time="6.885"/>
+  <system-out><![CDATA[?[1;31m
+Start test 1?[0m
+
+1. Create account
+2. Log into account
+0. Exit
+> 0
+Bye!
+?[1;31m
+Start test 2?[0m
+
+1. Create account
+2. Log into account
+0. Exit
+> 0
+Bye!
+?[1;31m
+Start test 3?[0m
+
+1. Create account
+2. Log into account
+0. Exit
+> 0
+Bye!
+?[1;31m
+Start test 4?[0m
+
+1. Create account
+2. Log into account
+0. Exit
+> 0
+Bye!
+?[1;31m
+Start test 5?[0m
+
+1. Create account
+2. Log into account
+0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000000349882474
+Your card PIN:
+9809
+
+1. Create account
+2. Log into account
+0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000003684298207
+Your card PIN:
+3709
+
+1. Create account
+2. Log into account
+0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000006224296441
+Your card PIN:
+6870
+
+1. Create account
+2. Log into account
+0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000008560713963
+Your card PIN:
+7384
+
+1. Create account
+2. Log into account
+0. Exit
+> 0
+Bye!
+?[1;31m
+Start test 6?[0m
+
+1. Create account
+2. Log into account
+0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000009780024280
+Your card PIN:
+2191
+
+1. Create account
+2. Log into account
+0. Exit
+> 2
+Enter your card number: 
+> 4000009780024280
+Enter your pin: 
+> 2191
+You have successfully logged in!
+
+1. Balance
+2. Add income
+3. Do transfer 
+4. Close account 
+5. Log out 
+0. Exit
+> 0
+Bye!
+?[1;31m
+Start test 7?[0m
+
+1. Create account
+2. Log into account
+0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000001733291561
+Your card PIN:
+7584
+
+1. Create account
+2. Log into account
+0. Exit
+> 2
+Enter your card number: 
+> 4000001733291561
+Enter your pin: 
+> 8628
+Wrong card number or PIN!
+
+1. Create account
+2. Log into account
+0. Exit
+> 0
+Bye!
+?[1;31m
+Start test 8?[0m
+
+1. Create account
+2. Log into account
+0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000004437502697
+Your card PIN:
+2589
+
+1. Create account
+2. Log into account
+0. Exit
+> 2
+Enter your card number: 
+> 400000725079650
+Enter your pin: 
+> 2589
+Wrong card number or PIN!
+
+1. Create account
+2. Log into account
+0. Exit
+> 0
+Bye!
+?[1;31m
+Start test 9?[0m
+
+1. Create account
+2. Log into account
+0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000007249753374
+Your card PIN:
+1455
+
+1. Create account
+2. Log into account
+0. Exit
+> 2
+Enter your card number: 
+> 4000007249753374
+Enter your pin: 
+> 1455
+You have successfully logged in!
+
+1. Balance
+2. Add income
+3. Do transfer 
+4. Close account 
+5. Log out 
+0. Exit
+> 1
+column 0 out of bounds [1,1]
+Balance: 0
+
+1. Balance
+2. Add income
+3. Do transfer 
+4. Close account 
+5. Log out 
+0. Exit
+> 0
+Bye!
+?[1;31m
+Start test 10?[0m
+
+1. Create account
+2. Log into account
+0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000009248616693
+Your card PIN:
+2550
+[SQLITE_BUSY]  The database file is locked (database is locked)
+
+1. Create account
+2. Log into account
+0. Exit
+> 2
+Enter your card number: 
+> 4000009248616693
+Enter your pin: 
+> 2550
+Wrong card number or PIN!
+
+1. Create account
+2. Log into account
+0. Exit
+> 2
+Enter your card number: 
+> 10000
+Enter your pin: 
+Account balance is wrong after adding income.
+Expected 10000
+> 2
+Wrong card number or PIN!
+
+1. Create account
+2. Log into account
+0. Exit
+> 15000
+Not an action
+
+1. Create account
+2. Log into account
+0. Exit
+Account balance is wrong after adding income.
+Expected 25000
+> 0
+Bye!
+?[1;31m
+Start test 11?[0m
+
+1. Create account
+2. Log into account
+0. Exit
+> 1
+
+Your card has been created
+Your card number:
+4000002437191388
+Your card PIN:
+3842
+[SQLITE_BUSY]  The database file is locked (database is locked)
+
+1. Create account
+2. Log into account
+0. Exit
+> 2
+Enter your card number: 
+> 4000002437191388
+Enter your pin: 
+> 3842
+Wrong card number or PIN!
+
+1. Create account
+2. Log into account
+0. Exit
+> 4
+Not an action
+
+1. Create account
+2. Log into account
+0. Exit
+> 0
+Bye!
+]]></system-out>
+  <system-err><![CDATA[java.sql.SQLException: ResultSet closed
+	at org.sqlite.core.CoreResultSet.checkOpen(CoreResultSet.java:69)
+	at org.sqlite.jdbc3.JDBC3ResultSet.findColumn(JDBC3ResultSet.java:38)
+	at org.sqlite.jdbc3.JDBC3ResultSet.getInt(JDBC3ResultSet.java:395)
+	at SimpleBankSystemTest.getBalance(SimpleBankSystemTest.java:672)
+	at SimpleBankSystemTest.lambda$generate$19(SimpleBankSystemTest.java:284)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting$1InputFunctionHandler.ejectNextInput(DynamicTesting.java:85)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$toDynamicTesting$0(DynamicTesting.java:124)
+	at org.hyperskill.hstest.testing.runner.AsyncMainMethodRunner.lambda$runMain$0(AsyncMainMethodRunner.java:30)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+java.sql.SQLException: ResultSet closed
+	at org.sqlite.core.CoreResultSet.checkOpen(CoreResultSet.java:69)
+	at org.sqlite.jdbc3.JDBC3ResultSet.findColumn(JDBC3ResultSet.java:38)
+	at org.sqlite.jdbc3.JDBC3ResultSet.getInt(JDBC3ResultSet.java:395)
+	at SimpleBankSystemTest.getBalance(SimpleBankSystemTest.java:672)
+	at SimpleBankSystemTest.lambda$generate$20(SimpleBankSystemTest.java:291)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting$1InputFunctionHandler.ejectNextInput(DynamicTesting.java:85)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$toDynamicTesting$0(DynamicTesting.java:124)
+	at org.hyperskill.hstest.testing.runner.AsyncMainMethodRunner.lambda$runMain$0(AsyncMainMethodRunner.java:30)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></system-err>
+</testsuite>
